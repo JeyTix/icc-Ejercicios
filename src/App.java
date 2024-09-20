@@ -1,4 +1,5 @@
 public class App {
+    //Hecho por: Jose Tixi
     public static void main(String[] args) throws Exception {
         /*
          * Crear una instancia de la clase Repaso.
@@ -70,5 +71,7 @@ public class App {
         System.out.println("El resultado de 2^3 es: " + potencia);
         System.out.println("¿El número 7 es primo?: " + esPrimo);
         System.out.println("El número 12345 tiene " + digitos + " dígitos.");
+        System.out.println("Hecho por Jose Tixi");
+        //Hecho por: Jose Tixi
     }
 }
