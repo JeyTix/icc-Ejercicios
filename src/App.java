@@ -27,7 +27,11 @@ public class App {
          * podemos
          * realizar operaciones básicas de manera creativa en programación.
          */
-        int resultado = dataStructuresPrep.subtractAlgorithm(15, 5);
+        
+        int suma = dataStructuresPrep.subtractAlgorithm(15, 5);
+        int multiplicación = dataStructuresPrep.multiplyAlgorithm(5, 3);
+        int division = dataStructuresPrep.divideWAlgorithm(10, 2);
+        dataStructuresPrep.isPerfectNumber(28);
 
         /*
          * Imprimir el resultado de la operación.
@@ -43,7 +47,10 @@ public class App {
          * como
          * parte de mensajes de salida o en lógicas de decisión más complejas.
          */
-        System.out.println("El resultado de subtractAlgorithm  es: " + resultado);
+        System.out.println("El resultado de suma  es: " + suma);
+        System.out.println("El resultado de multiplicacion  es: " + multiplicación);
+        System.out.println("El resultado de division  es: " + division);
+        System.out.println("El numero es perfecto: " );
 
     }
 }
