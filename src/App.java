@@ -28,10 +28,24 @@ public class App {
          * realizar operaciones básicas de manera creativa en programación.
          */
         
-        int suma = dataStructuresPrep.subtractAlgorithm(15, 5);
-        int multiplicación = dataStructuresPrep.multiplyAlgorithm(5, 3);
-        int division = dataStructuresPrep.divideWAlgorithm(10, 2);
-        dataStructuresPrep.isPerfectNumber(28);
+         int resta = dataStructuresPrep.subtractAlgorithm(15, 5);
+
+         int multiplicacion = dataStructuresPrep.multiplyAlgorithm(5, 3);
+ 
+         int division = dataStructuresPrep.divideWAlgorithm(10, 2);
+ 
+         boolean esPerfecto = dataStructuresPrep.isPerfectNumber(28);
+ 
+         int factorial = dataStructuresPrep.getFactorial(5);
+ 
+         int[] numeros = { 1, 5, 3, 6, 8, 10 };
+         int maximo = dataStructuresPrep.findMaximum(numeros);
+ 
+         int potencia = dataStructuresPrep.powerAlgorithm(2, 3);
+ 
+         boolean esPrimo = dataStructuresPrep.isPrime(7);
+ 
+         int digitos = dataStructuresPrep.countDigits(12345);
 
         /*
          * Imprimir el resultado de la operación.
@@ -47,10 +61,14 @@ public class App {
          * como
          * parte de mensajes de salida o en lógicas de decisión más complejas.
          */
-        System.out.println("El resultado de suma  es: " + suma);
-        System.out.println("El resultado de multiplicacion  es: " + multiplicación);
-        System.out.println("El resultado de division  es: " + division);
-        System.out.println("El numero es perfecto: " );
-
+        System.out.println("El resultado de la resta es: " + resta);
+        System.out.println("El resultado de la multiplicación es: " + multiplicacion);
+        System.out.println("El resultado de la división es: " + division);
+        System.out.println("¿El número 28 es perfecto?: " + esPerfecto);
+        System.out.println("El factorial de 5 es: " + factorial);
+        System.out.println("El número máximo en el arreglo es: " + maximo);
+        System.out.println("El resultado de 2^3 es: " + potencia);
+        System.out.println("¿El número 7 es primo?: " + esPrimo);
+        System.out.println("El número 12345 tiene " + digitos + " dígitos.");
     }
 }

@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 /**
  * La clase DataStructuresPrep está diseñada para reforzar conceptos
  * fundamentales de programación. A través de una serie
@@ -83,10 +81,10 @@ public class DataStructuresPrep {
         int suma = 0;
         for (int i = 1; i < number; i++) {
             if (number % i == 0) {
-                suma= suma+i;
+                suma = suma + i;
             }
         }
-        return suma== number;
+        return suma == number;
     }
 
     /**
@@ -97,7 +95,11 @@ public class DataStructuresPrep {
      *         Ejemplo: getFactorial(5) retorna 120.
      */
     public int getFactorial(int number) {
-        throw new UnsupportedOperationException("Not yet implemented");
+        int factorial = 1;
+        for (int i = 1; i <= number; i++) {
+            factorial *= i;
+        }
+        return factorial;
     }
 
     /**
@@ -108,7 +110,13 @@ public class DataStructuresPrep {
      *         Ejemplo: findMaximum(new int[]{1, 5, 3, 6, 8, 2}) retorna 8.
      */
     public int findMaximum(int[] numbers) {
-        throw new UnsupportedOperationException("Not yet implemented");
+        int max = numbers[0]; 
+        for (int i = 1; i < numbers.length; i++) {
+            if (numbers[i] > max) {
+                max = numbers[i]; 
+            }
+        }
+        return max;
     }
 
     /**
@@ -120,7 +128,11 @@ public class DataStructuresPrep {
      *         Ejemplo: powerAlgorithm(2, 3) retorna 8.
      */
     public int powerAlgorithm(int base, int exponent) {
-        throw new UnsupportedOperationException("Not yet implemented");
+        int result = 1;
+        for (int i = 0; i < exponent; i++) {
+            result *= base;
+        }
+        return result;
     }
 
     /**
@@ -131,7 +143,16 @@ public class DataStructuresPrep {
      *         Ejemplo: isPrime(5) retorna true.
      */
     public boolean isPrime(int number) {
-        throw new UnsupportedOperationException("Not yet implemented");
+
+        if (number <= 1) {
+            return false; 
+        }
+        for (int i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i == 0) {
+                return false;
+            }
+        }
+        return true;
     }
 
     /**
@@ -142,6 +163,11 @@ public class DataStructuresPrep {
      *         Ejemplo: countDigits(12345) retorna 5.
      */
     public int countDigits(int number) {
-        throw new UnsupportedOperationException("Not yet implemented");
+        int count = 0;
+        while (number != 0) {
+            number /= 10;
+            count++;
+        }
+        return count;
     }
 }
